@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://mailscrap/skin/" type="text/css"?>
+
+<prefwindow windowtype="window:type" id="findfile-window" title="MailScrap Setting" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane  id="mailscrap-option-all">
+	
+		<preferences>
+			<preference id="mailscrap-pref-uid" name="mailscrap.uid" type="unichar"/>
+		</preferences>
+
+		<hbox>
+			<groupbox><caption label="オプション設定"/>
+				<spacer flex="1"/>
+				<label control="mailscrap-option-userid" style="margin-top:7px;" value="ユーザーID："/>
+				<spacer flex="1"/>
+				<textbox id="mailscrap-option-userid" preference="mailscrap-pref-uid" type="text" maxlength="50"/>
+				<spacer flex="1"/>
+			</groupbox>
+		</hbox>
+
+	</prefpane>
+</prefwindow>
+

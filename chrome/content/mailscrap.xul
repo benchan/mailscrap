@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://mailscrap/skin/mailscrap.css" type="text/css"?>
+
+<overlay id="mailscrap" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+     
+    <script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js"/>    
+	<script type="application/x-javascript" src="chrome://mailscrap/content/mailscrap.js" />
+	
+	
+	<keyset>
+		<key id="mailscrap-start" modifiers="shift control alt" key="S" oncommand="scrapPage();"/>
+	</keyset>
+
+
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton key="mailscrap-start" id="mailscrap-button" label="MailScrap!" tooltiptext="MailScrap!" oncommand="scrapPage();">
+		</toolbarbutton>
+	</toolbarpalette>
+	
+	<popup id="contentAreaContextMenu">
+			<menuitem label="リンクをスクラップ！" id="mailscrap-context-click" class="menuitem-iconic" image="chrome://mailscrap/skin/16.png" insertafter="context-stop" oncommand="clickScrapContext()" />
+	<!--	<menuitem label="選択テキストをスクラップ！" id="mailscrap-context-select" class="menuitem-iconic" image="chrome://mailscrap/skin/16.png" insertafter="context-stop" oncommand="clickScrapContextSelect()" /> -->
+	</popup>	
+	
+	<statusbar id="status-bar">
+		<statusbarpanel id="mailscrap-panel-textarea" style="display:none;border:1px solid red" aligen="left">
+			<label value="" id="mailscrap-panel-text" style=""/>
+		</statusbarpanel>
+	</statusbar>
+
+</overlay>

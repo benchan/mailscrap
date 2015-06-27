@@ -1,0 +1,34 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Main button */
+
+#mailscrap-button
+{
+    list-style-image: url("chrome://mailscrap/skin/32.png");
+}
+
+toolbar[iconsize="small"] #mailscrap-button
+{
+    list-style-image: url("chrome://mailscrap/skin/16.png");
+
+}
+
+#mailscrap-option-all{
+
+	margin:10px;
+	padding:5px;
+	border:1px outset #999;
+
+}
+
+#mailscrap-option-all groupbox{
+
+	padding:7px;
+
+}
+
+#mailscrap-option-userid{
+
+	width:250px;
+
+}

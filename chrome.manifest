@@ -1,0 +1,5 @@
+content	mailscrap	chrome/content/
+overlay	chrome://browser/content/browser.xul	chrome://mailscrap/content/mailscrap.xul
+
+skin	mailscrap	classic/1.0	chrome/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://mailscrap/skin/mailscrap.css
