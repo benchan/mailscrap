@@ -1,0 +1,2 @@
+# mailscrap
+firefox addon
